@@ -8,7 +8,9 @@ test("header renders with react testing",()=>{
 })
 
 test("render login component in the document",()=>{
-  const component = render(<App />);
-  console.log(component);
+   render(<App />);
+  // console.log(component);
+  const childElement = screen.getByLabelText("Email");
+  expect(childElement).toBeTruthy();
 })
 

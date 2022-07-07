@@ -12,9 +12,6 @@ const Login = () => {
     e.preventDefault();
     if (validateEmail(email)) {
     
-      var String = ""
-
-      
       setShowUser(true);
       setError("");
       return;
